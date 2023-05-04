@@ -1,0 +1,6 @@
+name: 'search_api_empty_search'
+type: module
+description: 'Empty search term handler'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'

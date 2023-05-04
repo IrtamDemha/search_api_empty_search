@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains search_api_empty_search.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function search_api_empty_search_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the search_api_empty_search module.
+    case 'help.page.search_api_empty_search':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Empty search term handler') . '</p>';
+      return $output;
+
+    default:
+  }
+}

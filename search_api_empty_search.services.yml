@@ -1,0 +1,5 @@
+services:
+  custom_migrate.service:
+    class: Drupal\search_api_empty_search\EventSubscriber\SearchEventSubScriber
+    tags:
+      - { name: event_subscriber }
